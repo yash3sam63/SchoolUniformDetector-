@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Uniform Detector . AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <ul class="ul-nav">
+
+            <!-- <li>
+                <a href="#">Portfolio</a>
+            </li> -->
+
+            <li class="logo">School Uniform Detector <span>. AI</span> </li>
+
+            <!-- <li>
+                <a href="#">Contact</a>
+            </li> -->
+        </ul>
+
+        <div class="flew-box ">
+
+            <div class="flew-box-2 animated">
+                <div class="upload-container">
+                    <h3 style="color: #e0e0e0;">Upload Image for Detection</h3>
+                    <form id="imageForm" action="/detect_image" method="POST" enctype="multipart/form-data">
+                        <div class="choose-inner-form">
+                            <input type="file" name="image" accept="image/*">
+                        </div>
+                        <br>
+                        <button class="button-17" type="submit">Detect Image</button>
+                    </form>
+
+                </div>
+
+                <div class="result-show-container">
+                    <h3 id="resultMessage" class="result-container-p">Your result will be shown here. </h3>
+                    <a id="downloadButton" href="#" download="detected_image.jpg" class="button">Download Result</a>
+
+                </div>
+            </div>
+
+            <div class="result-container">
+                <img id="detectedImage" class="detectedImage"
+                    src="../static/images/School Uniform Detector ai White PNG.png" alt="Detected Image">
+            </div>
+
+
+        </div>
+        <div class="box">
+            <div class="single-box" style="opacity: 0.8; background-image: url('../static/images/1.png') "></div>
+        </div>
+    </div>
+
+    <!-- home page ends here -->
+
+    <div class="container-fix">
+
+        <div class="about-app-section animated">
+            <div class="content">
+                <h1>About School Uniform Detector</h1>
+                <p>
+                    The School Uniform Detector is a powerful AI-based web application designed to automatically
+                    identify school uniforms in images. Built using state-of-the-art machine learning models, this tool
+                    simplifies the process of determining whether students are wearing uniforms by analyzing uploaded
+                    photos.
+                </p>
+                <p>
+                    With an easy-to-use interface, users can upload images for quick detection. Whether it's for
+                    ensuring compliance, automating monitoring in educational institutions, or simply conducting
+                    research, the School Uniform Detector offers accurate and efficient results. Our system is built on
+                    advanced image recognition technology, ensuring that every uniform pattern, color, and style is
+                    detected reliably.
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="footer"></div> -->
+        <footer class="footer animated">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>We are committed to delivering top-notch services tailored to meet your needs. With a focus on
+                        innovation and customer satisfaction, our team strives to bring the best solutions to the table.
+                        Whether you're looking for reliable support, cutting-edge technology, or personalized attention,
+                        we've got you covered. Our goal is to build lasting relationships with our clients by providing
+                        consistent and reliable service. Stay connected with us for updates, new offerings, and more
+                        information on how we can help you succeed.</p>
+
+                </div>
+                <div class="footer-section links">
+                    <h2>Owned By Ishant Chauhan</h2>
+                    <ul>
+                        <li>Team Members :</li>
+                        <li> &rArr; Ishaan</li>
+                        <li> &rArr; Simran</li>
+                        <li> &rArr; Ishant</li>
+                        <li> &rArr; Samir</li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: support@example.com</p>
+                    <p>Phone: +91 9205700751</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 School Uniform Detector| Designed by <a
+                    href="https://www.instagram.com/sam.web.developer/?igsh=anlqaG5mbHEzbGNm">@sam.web.developer</a>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

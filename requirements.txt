@@ -1,0 +1,8 @@
+Flask
+inference_sdk
+roboflow
+opencv-python
+numpy
+Pillow
+requests
+gunicorn
